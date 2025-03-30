@@ -27,13 +27,14 @@ function App() {
         const newTime = prev - timeDiff;
         if (newTime <= 0) {
           // 時間到，發送通知
+          const scheduleTime = new Date(now + 1000); // 設置為1秒後
           LocalNotifications.schedule({
             notifications: [
               {
                 title: isBreak ? '休息時間結束' : '工作時間結束',
                 body: isBreak ? '該開始工作了！' : '該休息了！',
                 id: 1,
-                schedule: { at: new Date() },
+                schedule: { at: scheduleTime },
                 sound: 'notification.wav',
                 attachments: [],
                 actionTypeId: '',
