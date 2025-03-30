@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
@@ -50,6 +54,8 @@
   background-color: #f5f5f5;
   border-radius: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
 }
 
 h1 {
@@ -86,6 +92,8 @@ h1 {
 .controls {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 button {
@@ -97,6 +105,7 @@ button {
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
+  min-width: 100px;
 }
 
 button:hover {
@@ -117,4 +126,96 @@ button.test-mode {
 
 button.test-mode:hover {
   background-color: #f57c00;
+}
+
+/* 橫向螢幕適配 */
+@media screen and (orientation: landscape) {
+  #root {
+    padding: 1rem;
+  }
+
+  .app {
+    flex-direction: row;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .timer {
+    width: 150px;
+    height: 150px;
+  }
+
+  .timer h2 {
+    font-size: 2.5rem;
+  }
+
+  .timer p {
+    font-size: 1rem;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.6rem 1.2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* 小螢幕適配 */
+@media screen and (max-width: 480px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .app {
+    padding: 1rem;
+  }
+
+  .timer {
+    width: 180px;
+    height: 180px;
+  }
+
+  .timer h2 {
+    font-size: 2.8rem;
+  }
+
+  button {
+    padding: 0.7rem 1.3rem;
+    min-width: 90px;
+  }
+}
+
+/* 大螢幕適配 */
+@media screen and (min-width: 1024px) {
+  .app {
+    max-width: 600px;
+  }
+
+  .timer {
+    width: 220px;
+    height: 220px;
+  }
+
+  .timer h2 {
+    font-size: 3.5rem;
+  }
+
+  .timer p {
+    font-size: 1.3rem;
+  }
+
+  button {
+    padding: 1rem 1.8rem;
+    min-width: 120px;
+    font-size: 1.1rem;
+  }
 }
