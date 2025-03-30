@@ -1,0 +1,46 @@
+PODS:
+  - Capacitor (7.1.0):
+    - CapacitorCordova
+  - CapacitorApp (7.0.0):
+    - Capacitor
+  - CapacitorCordova (7.1.0)
+  - CapacitorHaptics (7.0.0):
+    - Capacitor
+  - CapacitorLocalNotifications (7.0.0):
+    - Capacitor
+  - CapacitorScreenReader (7.0.0):
+    - Capacitor
+
+DEPENDENCIES:
+  - "Capacitor (from `../../node_modules/@capacitor/ios`)"
+  - "CapacitorApp (from `../../node_modules/@capacitor/app`)"
+  - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
+  - "CapacitorHaptics (from `../../node_modules/@capacitor/haptics`)"
+  - "CapacitorLocalNotifications (from `../../node_modules/@capacitor/local-notifications`)"
+  - "CapacitorScreenReader (from `../../node_modules/@capacitor/screen-reader`)"
+
+EXTERNAL SOURCES:
+  Capacitor:
+    :path: "../../node_modules/@capacitor/ios"
+  CapacitorApp:
+    :path: "../../node_modules/@capacitor/app"
+  CapacitorCordova:
+    :path: "../../node_modules/@capacitor/ios"
+  CapacitorHaptics:
+    :path: "../../node_modules/@capacitor/haptics"
+  CapacitorLocalNotifications:
+    :path: "../../node_modules/@capacitor/local-notifications"
+  CapacitorScreenReader:
+    :path: "../../node_modules/@capacitor/screen-reader"
+
+SPEC CHECKSUMS:
+  Capacitor: bceb785fb78f5e81e4a9e37843bc1c24bd9c7194
+  CapacitorApp: 9cb31064a6c6bb2b1438583733a7bf45557fc1da
+  CapacitorCordova: 866217f32c1d25b326c568a10ea3ed0c36b13e29
+  CapacitorHaptics: 7be406a91e4eb87287f321c6c68e1709d6837b3a
+  CapacitorLocalNotifications: c9577978cd598af5e2b5615548b8222b3b10d7e2
+  CapacitorScreenReader: 3f93331bf11c39d3c42149e452729c414ea39a66
+
+PODFILE CHECKSUM: 66d068ff87eb1cf824b17fefb56564b8dcbe220f
+
+COCOAPODS: 1.16.2

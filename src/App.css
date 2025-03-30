@@ -110,3 +110,11 @@ button:last-child {
 button:last-child:hover {
   background-color: #da190b;
 }
+
+button.test-mode {
+  background-color: #ff9800;
+}
+
+button.test-mode:hover {
+  background-color: #f57c00;
+}
